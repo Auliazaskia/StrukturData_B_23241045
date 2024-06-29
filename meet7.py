@@ -1,71 +1,47 @@
-# Tabel Kebenaran (logika bolean)
-# not And or xor
+# input dari user
+# aritmatika
 
-# NOT
+# Belajar Inputan
+aulia = input ("masukkan kata:")
+print("isi dari aulia :", aulia, "bertipe data :",type(aulia))
 
-print(">>>>>Logika NOT<<<<<")
-x = False
-y = not x
-print('value dari x =', x)
-print('^^^^^^^^NOT^^^^^^^')
-print('value dari y =', y)
+# belajar aritmatika dasar
+x = 3
+y = 4
 
-# Logika OR (Semua Bernilai True Asalkan ada true-nya)
-# berlaku untuk wanita
-print("<<<<<Logika OR>>>>>")
-x = False
-y = False
-z = x or y
-print(x, 'OR', y, 'Adl', z)
-x = False
-y = True
-z = x or y
-print(x, 'OR', y, 'Adl', z)
-x = True
-y = False
-z = x or y
-print(x, 'OR', y, 'Adl', z)
-x = True
-y = True
-z = x or y
-print(x, 'OR', y, 'Adl', z)
+# penjumlahan +
+hasil = x + y
+print ("x + y =", hasil)
 
-# Logika AND (Hanya Bernilai True, ketika keduanya true)
-# berlaku untuk Laki-laki
-print("<<<<<Logika AND>>>>>")
-x = False
-y = False
-z = x and y
-print(x, 'and', y, 'Adl', z)
-x = False
-y = True
-z = x and y
-print(x, 'and', y, 'Adl', z)
-x = True
-y = False
-z = x and y
-print(x, 'and', y, 'Adl', z)
-x = True
-y = True
-z = x and y
-print(x, 'and', y, 'Adl', z)
+# pengurangan -
+hasil = x - y
+print ("x - y =", hasil)
 
-# Logika XOR (Jika keduanya Sama hasilnya False, sisanya bernilai True)
-# 
-print("<<<<<Logika XOR>>>>>")
-x = False
-y = False
-z = x ^ y
-print(x, 'XOR', y, 'Adl', z)
-x = False
-y = True
-z = x ^ y
-print(x, 'XOR', y, 'Adl', z)
-x = True
-y = False
-z = x ^ y
-print(x, 'XOR', y, 'Adl', z)
-x = True
-y = True
-z = x ^ y
-print(x, 'XOR', y, 'Adl', z)
+# perkalian *
+hasil = x * y
+print ("x * y =", hasil)
+
+# pembagian /
+hasil = x / y
+print ("x / y =", hasil)
+
+# XOR ^
+hasil = x ^ y
+print ("x ^ y =", hasil)
+
+# modulus %
+hasil = x % y
+print ("x mod y =", hasil)
+
+# floor division (pembulatan kebawah) //
+hasil = x // y
+print ("x // y =", hasil)
+
+# aritmatika prioritas
+# (), exponen, perkalian/pembaagian, penjumlahan/pengangguran
+x = 3
+y = 4
+z = 5
+
+hasil = ( x ** y * z + x / y - z % x // y)
+print (hasil)
